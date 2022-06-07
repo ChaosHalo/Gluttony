@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class randomCreate : MonoBehaviour
 {
     // Start is called before the first frame update
     //public Transform[] spawnPoints;
-    public GameObject rewardings;
+    public GameObject[] rewardings;
     public GameObject punishments;
     public float spawnTime = 3f;
     public float nextSpawn = 2f;
@@ -19,14 +18,16 @@ public class randomCreate : MonoBehaviour
     {
         //int Index = Random.Range(0, spawnPoints.Length);
         //Instantiate(spawnGameObject, spawnPoints[Index].position,spawnPoints[Index].rotation);
-        for (int i = 0; i < 10; i++)
+        for (int j = 0; j < rewardings.Length; j++)
         {
-            Instantiate(rewardings,
-                new Vector3(Random.Range(0f, 10f), 1, Random.Range(0f, 10f)), 
-                Quaternion.identity);
-            Instantiate(punishments,
-                new Vector3(Random.Range(0f, 10f), 1, Random.Range(0f, 10f)),
-                Quaternion.identity);
+            int num = Random.Range(0, 10);
+
+            for (int i = 0; i < num; i++)
+            {
+                Instantiate(rewardings[j],
+                                new Vector3(Random.Range(0f, 10f), 1, Random.Range(0f, 10f)), 
+                                Quaternion.identity);
+            }
         }
     }
     // Update is called once per frame
