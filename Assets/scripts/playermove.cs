@@ -20,8 +20,8 @@ public class playermove : MonoBehaviour
 
     void MoveThePlayer()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxis(const_item.HORIZONTAL);
+        float v = Input.GetAxis(const_item.VERTICAL);
         rb.AddForce(new Vector3(h, 0, v) * speed);
     }
 }
