@@ -13,7 +13,6 @@ public class eat : MonoBehaviour
     {
         //Debug.Log(check.eatlist);
         //Debug.Log(this.name);
-        offset = transform.position - playertransform.position;
     }
 
     // Update is called once per frame
@@ -22,6 +21,6 @@ public class eat : MonoBehaviour
         if (check.eatlist == this.transform.position)
             flag = true;
         if (flag)
-            transform.position = offset + playertransform.position;
+            transform.position = playertransform.position;
     }
 }

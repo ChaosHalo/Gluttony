@@ -11,7 +11,7 @@ public class trigger : MonoBehaviour
     {
         if (other.tag == const_item.REWARDING)
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             player.transform.localScale += scale;
             eatlist = other.transform.position;
 
@@ -19,7 +19,7 @@ public class trigger : MonoBehaviour
 
         if (other.tag == const_item.PUNISHMENT)
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             player.transform.localScale -= scale;
             eatlist = other.transform.position;
         }
