@@ -6,21 +6,22 @@ public class trigger : MonoBehaviour
 {
     public Rigidbody player;
     public Vector3 scale = new Vector3(0.1f, 0.1f, 0.1f);
-    public string eatlist = "null";
+    public Vector3 eatlist;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == const_item.REWARDING)
         {
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
             player.transform.localScale += scale;
-            eatlist = other.name;
+            eatlist = other.transform.position;
+
         }
 
         if (other.tag == const_item.PUNISHMENT)
         {
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
             player.transform.localScale -= scale;
-            eatlist = other.name;
+            eatlist = other.transform.position;
         }
     }
 }

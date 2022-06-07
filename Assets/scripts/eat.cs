@@ -11,15 +11,15 @@ public class eat : MonoBehaviour
     
     void Start()
     {
-        Debug.Log(check.eatlist);
-        Debug.Log(this.name);
+        //Debug.Log(check.eatlist);
+        //Debug.Log(this.name);
         offset = transform.position - playertransform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (check.eatlist == this.name)
+        if (check.eatlist == this.transform.position)
             flag = true;
         if (flag)
             transform.position = offset + playertransform.position;
