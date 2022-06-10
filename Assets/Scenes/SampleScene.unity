@@ -1578,20 +1578,20 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1119097155}
-  - {fileID: 57895573}
+  - {fileID: 468731894}
   - {fileID: 1734269602}
   - {fileID: 125709010}
   - {fileID: 155635630}
   - {fileID: 1479989032}
-  - {fileID: 468731894}
-  - {fileID: 1068882786}
-  - {fileID: 1185024863}
+  - {fileID: 57895573}
   - {fileID: 1808952745}
+  - {fileID: 1185024863}
+  - {fileID: 1068882786}
   - {fileID: 1963311983}
-  - {fileID: 1044342116}
   - {fileID: 1551670126}
-  - {fileID: 857863391}
+  - {fileID: 1044342116}
   - {fileID: 1187305760}
+  - {fileID: 857863391}
   - {fileID: 719349150}
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -5007,7 +5007,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94528918}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -5137,7 +5137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 94528920}
-  scale: {x: 0.1, y: 0.1, z: 0.1}
   eatlist: {x: 0, y: 0, z: 0}
   point_text: {fileID: 165733649}
   level_text: {fileID: 1738662740}
